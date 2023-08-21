@@ -1,0 +1,1 @@
+export const UrlApi = "https://servicodados.ibge.gov.br/api/v2/censos/nomes/";
