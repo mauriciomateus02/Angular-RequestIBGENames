@@ -1,0 +1,37 @@
+<header>
+    <a routerLink=""><img src="../../../assets/arrowBack.png" height="30px" /></a>
+    Frequência por {{this.name}}
+</header>
+<main>
+    <table class="list" *ngFor="let element of listName;">
+        <ul title="top">
+            <li>
+                <p >#</p>
+                <p>Classe</p>
+                <p>Frequência</p>
+            </li>
+        </ul>
+        <ul *ngFor="let components of element.res; let i = index;">
+            <li>
+                <p >{{i+1}}</p>
+                <p>{{components.periodo}}</p>
+                <p>{{components.frequencia}}</p>
+            </li>
+        </ul>
+        <ul title="bottom">
+            <li>
+                <p>
+                    Total
+                </p>
+
+                <p>{{this.total}}</p>
+            </li>
+        </ul>
+    </table>
+</main>
+
+
+<!--
+
+
+ -->
