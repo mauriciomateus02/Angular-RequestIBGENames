@@ -1,0 +1,15 @@
+
+    <header>
+        Busca frequência por nome
+    </header>
+    <main>
+
+        <form>  
+            <label name="texto">Nome</label>
+            <input type="text" id="nome" [formControl] = "name" required minlength="3">
+            <button id="buscar" type="button" *ngIf="name.value != ''; noCourse" (click)="sharedData()" [routerLink]="['table']">Buscar</button>
+            <button id="buscar" type="button" #noCourse *ngIf=" name.value == ''" >Buscar</button>
+            <button id="cancelar" type="button" (click)="updateName()">Cancelar </button>
+        </form>
+    </main>
+

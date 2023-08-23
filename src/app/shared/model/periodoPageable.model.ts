@@ -1,18 +1,8 @@
+import { inject } from "@angular/core";
 
-export class PeriodoPageable{
+ export interface PeriodoPageable{
 
     periodo: string;
-    decada: number;
+    frequencia: number;
 
-    constructor(periodo: string,decada: number){
-        this.periodo = periodo;
-        this.decada = decada;
-    }
-
-    static FromJson(Json: any){
-        return new PeriodoPageable(
-            Json['periodo'],
-            Json['frequencia:']
-            );
-    }
 }

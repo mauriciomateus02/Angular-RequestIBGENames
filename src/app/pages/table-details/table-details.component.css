@@ -1,0 +1,80 @@
+header {
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex: 1;
+    height: 30px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(10, 10, 94);
+    color: aliceblue;
+    align-items: center;
+    font-size: large;
+    padding-left: 2%;
+    
+}
+
+header img {
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center
+}
+
+.list {
+    width: 80%;
+    padding: 0px;
+    height: auto;
+}
+
+.list ul {
+    display: block;
+    padding: 0%;
+    height: 5%;
+
+
+}
+
+.list ul li {
+
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: auto;
+
+}
+
+ul:nth-child(odd) {
+    background-color: white;
+    height: 5%;
+}
+
+ul:nth-child(even) {
+    background-color: rgb(211, 207, 207);
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
+p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul[title='top'] li p{
+    font-weight: bold;
+    
+}
+ul[title='bottom'] li p{
+    font-weight: bold;
+    
+}
+ul[title='top']{
+    border-top: 1px solid  rgb(179, 179, 179);
+}
+ul[title='bottom']{
+    border-bottom: 1px solid rgb(179, 179, 179);
+}
